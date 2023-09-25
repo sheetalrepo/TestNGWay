@@ -1,0 +1,27 @@
+<suite name="Parallel Tests" verbose="1" thread-count="2"
+	parallel="tests">
+
+	<tests>
+
+		<test name="Mac+Firefox Test1">
+			<parameters>
+				<parameter name="browser" value="firefox" />
+			</parameters>
+			<classes>
+				<class name="parallel.SimpleTestCase1" />
+			</classes>
+		</test>
+
+		<test name="Mac+Chrome Test2">
+			<parameters>
+				<parameter name="browser" value="chrome" />
+			</parameters>
+			<classes>
+				<class name="parallel.SimpleTestCase2" />
+			</classes>
+		</test>
+
+	</tests>
+
+
+</suite>

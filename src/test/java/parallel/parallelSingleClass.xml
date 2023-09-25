@@ -1,0 +1,33 @@
+<suite name="Parallel Tests" verbose="1" thread-count="2"
+	parallel="tests">
+
+	<tests>
+
+		<test name="Mac+Firefox Test1">
+			<parameters>
+				<parameter name="browser" value="firefox" />
+			</parameters>
+			<classes>
+				<class name="parallel.SimpleTestCase3" />
+			</classes>
+		</test>
+
+		<test name="Mac+Firefox Test2">
+			<parameters>
+				<parameter name="browser" value="chrome" />
+			</parameters>
+			<classes>
+				<class name="parallel.SimpleTestCase3" />
+			</classes>
+		</test>
+
+
+
+	</tests>
+
+
+</suite>
+
+<!-- <methods> <include name = "openGoogle"/> <include name = "openYahoo"/> 
+	</methods> -->
+					

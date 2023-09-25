@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Hookable Ex 1" parallel="false">
+
+	<listeners>
+		<listener class-name="ihookablelistener.ITestListener1" />
+		<listener class-name="ihookablelistener.IHookableListener1" />
+	</listeners>
+
+	<test name="Hookable Listeners">
+		<classes>
+			<class name="ihookablelistener.HookableExample1" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,21 @@
+<suite name="Parallel Tests" verbose="1" thread-count="2"
+	parallel="tests">
+
+	<tests>
+
+		<test name="Test1">
+			<classes>
+				<class name="A_DemoTestNG.test9_Parallel1" />
+			</classes>
+		</test>
+
+		<test name="Test2">
+			<classes>
+				<class name="A_DemoTestNG.test9_Parallel2" />
+			</classes>
+		</test>
+
+	</tests>
+
+
+</suite>	

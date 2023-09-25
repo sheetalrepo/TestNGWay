@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Group of group Suite New" verbose="1">
+	<test name="Group of group Test New">
+		<groups>
+			<define name="group1">
+				<include name="PA" />
+				<include name="PB" />
+			</define>
+		</groups>
+		<classes>
+			<class name="basics.PriorityA" />
+			<class name="basics.PriorityB" />
+		</classes>
+	</test>
+</suite>
